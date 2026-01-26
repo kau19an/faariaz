@@ -1,0 +1,34 @@
+{
+  "geo_banner": {
+    "text": "Il semble que vous soyez en <strong>{{country}}</strong>. Souhaitez-vous passer en <strong>{{lang}}</strong>?",
+    "yes": "Changer"
+  },
+
+  "notfound": {
+    "headline": "Oups! On dirait qu'on s'est perdu.",
+    "subheadline": "La page que vous cherchez n'existe pas ou a changé d'adresse.",
+    "reasons_title": "Que s'est-il passé?",
+    "reason_1": "Il y a eu une petite faute de frappe dans l'URL.",
+    "reason_2": "Le lien sur lequel vous avez cliqué est ancien ou cassé.",
+    "reason_3": "La page a été déplacée ou renommée lors d'une mise à jour.",
+    "back_button": "Retour à l'accueil"
+  },
+
+  "persona_banner": {
+    "label_casual": "Mode détendu",
+    "label_pro": "Mode pro",
+    "title_casual": "Une petite quête annexe?",
+    "title_pro": "Parlons affaires?",
+    "desc_casual": "Vous explorez mon côté pro, mais si je vous disais qu'il y a une zone cachée? Je vous invite à découvrir mon côté détente, lire mon blog et voir ce qui me passionne.",
+    "desc_pro": "Vous naviguez sur mon côté perso, mais si vous voulez enfiler le costume-cravate, passer aux choses sérieuses et voir mes projets et compétences techniques, il suffit de tourner la clé.",
+    "button_casual": "C'est parti!",
+    "button_pro": "Montrez-moi"
+  },
+
+  "title": {
+    "home": "Accueil",
+    "notfound": "Page introuvable"
+  },
+
+  "select_lang": "Choisir la langue"
+}

@@ -1,0 +1,34 @@
+{
+  "geo_banner": {
+    "text": "Es scheint, dass Sie sich in <strong>{{country}}</strong> befinden. Möchten Sie die Sprache auf <strong>{{lang}}</strong> ändern?",
+    "yes": "Ändern"
+  },
+
+  "notfound": {
+    "headline": "Huch! Wir haben uns wohl verlaufen.",
+    "subheadline": "Die Seite, die du suchst, existiert nicht oder wurde verschoben.",
+    "reasons_title": "Was könnte passiert sein?",
+    "reason_1": "Es gab einen kleinen Tippfehler in der URL.",
+    "reason_2": "Der Link, den du angeklickt hast, ist alt oder defekt.",
+    "reason_3": "Die Seite wurde während eines Updates verschoben oder umbenannt.",
+    "back_button": "Zurück zur Startseite"
+  },
+
+  "persona_banner": {
+    "label_casual": "Casual Modus",
+    "label_pro": "Profi-Modus",
+    "title_casual": "Lust auf eine Nebenmission?",
+    "title_pro": "Kommen wir zum Geschäftlichen?",
+    "desc_casual": "Du befindest dich auf meiner professionellen Seite, aber wusstest du, dass es hier ein verstecktes Level gibt? Lern meine entspannte Seite kennen, lies meinen Blog und schau dir an, was ich sonst so mache.",
+    "desc_pro": "Du siehst gerade meine private Seite. Wenn du aber in Anzug und Krawatte schlüpfen und meine ernsten Projekte, meinen Lebenslauf und meine Skills sehen willst, musst du nur den Schlüssel umdrehen.",
+    "button_casual": "Los geht's!",
+    "button_pro": "Zeig es mir"
+  },
+
+  "title": {
+    "home": "Startseite",
+    "notfound": "Seite nicht gefunden"
+  },
+
+  "select_lang": "Sprache auswählen"
+}

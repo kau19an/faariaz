@@ -1,0 +1,34 @@
+{
+  "geo_banner": {
+    "text": "It looks like you are in <strong>{{country}}</strong>. Do you wish to change the language to <strong>{{lang}}</strong>?",
+    "yes": "Switch"
+  },
+
+  "notfound": {
+    "headline": "Oops! Looks like we're lost.",
+    "subheadline": "The page you are looking for doesn't exist or has been moved.",
+    "reasons_title": "What might have happened?",
+    "reason_1": "There was a small typo in the URL.",
+    "reason_2": "The link you clicked is old or broken.",
+    "reason_3": "The page was moved or renamed during an update.",
+    "back_button": "Back to home"
+  },
+
+  "persona_banner": {
+    "label_casual": "Casual Mode",
+    "label_pro": "Professional Mode",
+    "title_casual": "Up for a side quest?",
+    "title_pro": "Let's talk business?",
+    "desc_casual": "You are currently browsing my professional side, but what if I told you there's a hidden level around here? I invite you to check out my casual side, read my blog posts, and see what I'm up to offline.",
+    "desc_pro": "You are browsing my casual side, but if you want to suit up, get serious, and check out my projects, resume, and technical skills, just turn the key.",
+    "button_casual": "Let's go!",
+    "button_pro": "Show me"
+  },
+
+  "title": {
+    "home": "Home",
+    "notfound": "Page not found"
+  },
+
+  "select_lang": "Select language"
+}

@@ -1,0 +1,34 @@
+{
+  "geo_banner": {
+    "text": "Sembra che tu sia in <strong>{{country}}</strong>. Vuoi cambiare la lingua in <strong>{{lang}}</strong>?",
+    "yes": "Cambia"
+  },
+
+  "notfound": {
+    "headline": "Ops! Sembra che ci siamo persi.",
+    "subheadline": "La pagina che cerchi non esiste o ha cambiato indirizzo.",
+    "reasons_title": "Cosa potrebbe essere successo?",
+    "reason_1": "C'è stato un piccolo errore di battitura nell'URL.",
+    "reason_2": "Il link su cui hai cliccato è vecchio o interrotto.",
+    "reason_3": "La pagina è stata spostata o rinominata durante un aggiornamento.",
+    "back_button": "Torna alla home"
+  },
+
+  "persona_banner": {
+    "label_casual": "Modalità casual",
+    "label_pro": "Modalità pro",
+    "title_casual": "Ti va una missione secondaria?",
+    "title_pro": "Parliamo di affari?",
+    "desc_casual": "Stai navigando nel mio lato professionale, ma se ti dicessi che c'è un'area segreta qui intorno? Ti invito a scoprire il mio lato più rilassato, leggere il mio blog e altro ancora.",
+    "desc_pro": "Stai visitando il mio lato personale, ma se vuoi metterti in giacca e cravatta, fare sul serio e vedere i miei progetti, il curriculum e le competenze tecniche, basta girare la chiave.",
+    "button_casual": "Andiamo!",
+    "button_pro": "Fammi vedere"
+  },
+
+  "title": {
+    "home": "Pagina iniziale",
+    "notfound": "Pagina non trovata"
+  },
+
+  "select_lang": "Seleziona lingua"
+}

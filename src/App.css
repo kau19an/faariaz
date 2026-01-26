@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html,
+  body {
+    @apply select-none cursor-default;
+  }
+
+  img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    @apply select-none;
+  }
+
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"] {
+    @apply cursor-pointer;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    @apply select-text cursor-text;
+  }
+}
