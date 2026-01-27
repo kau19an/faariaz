@@ -137,7 +137,7 @@ export default function NotFound() {
                 size={20}
                 className="group-hover:-translate-x-1 transition-transform"
               />
-              {t("notfound.back_button")}
+              {t("button.return_home")}
             </Link>
           </motion.div>
 

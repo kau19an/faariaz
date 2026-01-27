@@ -1,7 +1,63 @@
 {
+  "admin": {
+    "title": "Panneau de configuration",
+    "subtitle": "Lorem ipsum dolor",
+    "table_title": "Titre",
+    "table_topic": "Sujet",
+    "table_slug": "Slug",
+    "table_date": "Date",
+    "table_actions": "Actions",
+    "empty_state": "Vous n'avez pas encore d'articles.",
+    "delete_confirm": "Voulez-vous vraiment supprimer cet article ?"
+  },
+
+  "auth": {
+    "title": "Accès restreint",
+    "email_placeholder": "exemple@email.com",
+    "password_placeholder": "Entrez votre mot de passe",
+    "error_missing_fields": "Tous les champs doivent être remplis.",
+    "error_invalid_auth": "E-mail ou mot de passe incorrect. Veuillez réessayer.",
+    "error_generic": "Une erreur inattendue s'est produite."
+  },
+
+  "button": {
+    "cancel": "Annuler",
+    "copy": "Copier",
+    "edit_post": "Modifier l'article",
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
+    "new_post": "Nouvel article",
+    "publish_post": "Publier",
+    "read_more": "Lire la suite",
+    "return": "Retour",
+    "return_home": "Retour à l'accueil",
+    "see_all_posts": "Voir tous les articles",
+    "update_post": "Mettre à jour",
+    "upload": "Téléverser"
+  },
+
+  "categories": {
+    "coding": "Programmation",
+    "gaming": "Jeux vidéo",
+    "life": "Vie personnelle",
+    "music": "Musique",
+    "travel": "Voyage"
+  },
+
+  "footer": {
+    "rights": "Tous droits réservés."
+  },
+
   "geo_banner": {
     "text": "Il semble que vous soyez en <strong>{{country}}</strong>. Souhaitez-vous passer en <strong>{{lang}}</strong>?",
     "yes": "Changer"
+  },
+
+  "menu": {
+    "home": "Accueil",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contact"
   },
 
   "notfound": {
@@ -10,25 +66,44 @@
     "reasons_title": "Que s'est-il passé?",
     "reason_1": "Il y a eu une petite faute de frappe dans l'URL.",
     "reason_2": "Le lien sur lequel vous avez cliqué est ancien ou cassé.",
-    "reason_3": "La page a été déplacée ou renommée lors d'une mise à jour.",
-    "back_button": "Retour à l'accueil"
-  },
-
-  "persona_banner": {
-    "label_casual": "Mode détendu",
-    "label_pro": "Mode pro",
-    "title_casual": "Une petite quête annexe?",
-    "title_pro": "Parlons affaires?",
-    "desc_casual": "Vous explorez mon côté pro, mais si je vous disais qu'il y a une zone cachée? Je vous invite à découvrir mon côté détente, lire mon blog et voir ce qui me passionne.",
-    "desc_pro": "Vous naviguez sur mon côté perso, mais si vous voulez enfiler le costume-cravate, passer aux choses sérieuses et voir mes projets et compétences techniques, il suffit de tourner la clé.",
-    "button_casual": "C'est parti!",
-    "button_pro": "Montrez-moi"
+    "reason_3": "La page a été déplacée ou renommée lors d'une mise à jour."
   },
 
   "title": {
     "home": "Accueil",
-    "notfound": "Page introuvable"
+    "notfound": "Page introuvable",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contact"
   },
 
-  "select_lang": "Choisir la langue"
+  "ui": {
+    "copied": "Copié!",
+    "cover_cape": "Image de couverture",
+    "creating_post": "Création d'un nouvel article",
+    "editing_post": "Modification de l'article",
+    "editor": "Éditeur",
+    "editor_ph": "Écrivez votre texte ici...",
+    "fill_all_fields": "Vous devez remplir tous les champs obligatoires.",
+    "image_legend_ph": "Écrivez une légende pour l'image (optionnel)...",
+    "image_link_ph": "URL ou téléverser",
+    "loading": "Chargement...",
+    "loading_post": "Chargement de l'article...",
+    "loading_post_error": "Erreur lors du chargement de l'article.",
+    "logging": "Connexion...",
+    "no_posts_topic": "Il n'y a pas encore d'articles sur ce sujet.",
+    "no_posts_yet": "Aucun article trouvé pour le moment.",
+    "post_not_found": "Article non trouvé",
+    "preview": "Aperçu",
+    "saving_post_error": "Erreur lors de l'enregistrement. Vérifiez les permissions ou les slugs dupliqués.",
+    "select": "Sélectionner...",
+    "select_lang": "Choisir la langue",
+    "topic_not_found": "Sujet non trouvé",
+    "upload_error": "Erreur lors du téléversement."
+  },
+
+  "wip": {
+    "title": "Ce site est encore en construction.",
+    "text": "Attendez-vous à des pages blanches ou à d'éventuelles erreurs."
+  }
 }

@@ -1,7 +1,63 @@
 {
+  "admin": {
+    "title": "Control panel",
+    "subtitle": "Lorem ipsum dolor",
+    "table_title": "Title",
+    "table_topic": "Topic",
+    "table_slug": "Slug",
+    "table_date": "Date",
+    "table_actions": "Actions",
+    "empty_state": "You don't have posts yet.",
+    "delete_confirm": "Do you really wish to delete this post?"
+  },
+
+  "auth": {
+    "title": "Restricted access",
+    "email_placeholder": "example@email.com",
+    "password_placeholder": "Type your password",
+    "error_missing_fields": "It is mandatory to fill all the fields.",
+    "error_invalid_auth": "Email or password are wrong. Try again.",
+    "error_generic": "An unexpected error occurred."
+  },
+
+  "button": {
+    "cancel": "Cancel",
+    "copy": "Copy",
+    "edit_post": "Edit post",
+    "login": "Log in",
+    "logout": "Log off",
+    "new_post": "New post",
+    "publish_post": "Publish",
+    "read_more": "Read more",
+    "return": "Back",
+    "return_home": "Back to home",
+    "see_all_posts": "See all posts",
+    "update_post": "Update",
+    "upload": "Upload"
+  },
+
+  "categories": {
+    "coding": "Coding",
+    "gaming": "Gaming",
+    "life": "Life",
+    "music": "Music",
+    "travel": "Travel"
+  },
+
+  "footer": {
+    "rights": "All rights reserved."
+  },
+
   "geo_banner": {
     "text": "It looks like you are in <strong>{{country}}</strong>. Do you wish to change the language to <strong>{{lang}}</strong>?",
     "yes": "Switch"
+  },
+
+  "menu": {
+    "home": "Home",
+    "about": "About me",
+    "blog": "Blog",
+    "contact": "Contact"
   },
 
   "notfound": {
@@ -10,25 +66,44 @@
     "reasons_title": "What might have happened?",
     "reason_1": "There was a small typo in the URL.",
     "reason_2": "The link you clicked is old or broken.",
-    "reason_3": "The page was moved or renamed during an update.",
-    "back_button": "Back to home"
-  },
-
-  "persona_banner": {
-    "label_casual": "Casual Mode",
-    "label_pro": "Professional Mode",
-    "title_casual": "Up for a side quest?",
-    "title_pro": "Let's talk business?",
-    "desc_casual": "You are currently browsing my professional side, but what if I told you there's a hidden level around here? I invite you to check out my casual side, read my blog posts, and see what I'm up to offline.",
-    "desc_pro": "You are browsing my casual side, but if you want to suit up, get serious, and check out my projects, resume, and technical skills, just turn the key.",
-    "button_casual": "Let's go!",
-    "button_pro": "Show me"
+    "reason_3": "The page was moved or renamed during an update."
   },
 
   "title": {
     "home": "Home",
-    "notfound": "Page not found"
+    "notfound": "Page not found",
+    "about": "About me",
+    "blog": "Blog",
+    "contact": "Contact"
   },
 
-  "select_lang": "Select language"
+  "ui": {
+    "copied": "Copied!",
+    "cover_cape": "Cover image",
+    "creating_post": "Creating new post",
+    "editing_post": "Editing post",
+    "editor": "Editor",
+    "editor_ph": "Type your text here...",
+    "fill_all_fields": "You must fill all fields.",
+    "image_legend_ph": "Write a legend to the image (optional)...",
+    "image_link_ph": "URL or make an upload",
+    "loading": "Loading...",
+    "loading_post": "Loading post...",
+    "loading_post_error": "An error occurred when loading the post.",
+    "logging": "Logging in...",
+    "no_posts_topic": "There aren't posts in this topic yet.",
+    "no_posts_yet": "No posts found yet.",
+    "post_not_found": "Post not found",
+    "preview": "Preview",
+    "saving_post_error": "An error occurred when saving. Check the permissions or duplicate slugs.",
+    "select": "Select...",
+    "select_lang": "Select language",
+    "topic_not_found": "Topic not found",
+    "upload_error": "An error occurred when uploading."
+  },
+
+  "wip": {
+    "title": "This website is still in progress.",
+    "text": "Expect blank pages or errors."
+  }
 }

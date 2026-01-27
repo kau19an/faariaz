@@ -93,7 +93,7 @@ export default function LanguageSelector() {
               <div className="max-h-64 overflow-y-auto py-2 custom-scrollbar text-center">
                 <div className="px-3 pb-2 mb-2 border-b border-gray-100">
                   <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
-                    {t("select_lang")}
+                    {t("ui.select_lang")}
                   </span>
                 </div>
 

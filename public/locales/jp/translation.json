@@ -1,7 +1,63 @@
 {
+  "admin": {
+    "title": "管理パネル",
+    "subtitle": "Lorem ipsum dolor",
+    "table_title": "タイトル",
+    "table_topic": "トピック",
+    "table_slug": "スラッグ",
+    "table_date": "日付",
+    "table_actions": "操作",
+    "empty_state": "記事はまだありません。",
+    "delete_confirm": "本当にこの記事を削除しますか？"
+  },
+
+  "auth": {
+    "title": "アクセス制限",
+    "email_placeholder": "example@email.com",
+    "password_placeholder": "パスワードを入力",
+    "error_missing_fields": "すべての項目を入力する必要があります。",
+    "error_invalid_auth": "メールアドレスまたはパスワードが間違っています。もう一度お試しください。",
+    "error_generic": "予期せぬエラーが発生しました。"
+  },
+
+  "button": {
+    "cancel": "キャンセル",
+    "copy": "コピー",
+    "edit_post": "記事を編集",
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "new_post": "新しい記事",
+    "publish_post": "公開",
+    "read_more": "続きを読む",
+    "return": "戻る",
+    "return_home": "ホームに戻る",
+    "see_all_posts": "すべての記事を見る",
+    "update_post": "更新",
+    "upload": "アップロード"
+  },
+
+  "categories": {
+    "coding": "プログラミング",
+    "gaming": "ゲーム",
+    "life": "私生活",
+    "music": "音楽",
+    "travel": "旅行"
+  },
+
+  "footer": {
+    "rights": "全著作権所有。"
+  },
+
   "geo_banner": {
     "text": "<strong>{{country}}</strong>にいるようです。言語を<strong>{{lang}}</strong>に変更しますか？",
     "yes": "変更する"
+  },
+
+  "menu": {
+    "home": "ホーム",
+    "about": "プロフィール",
+    "blog": "ブログ",
+    "contact": "お問い合わせ"
   },
 
   "notfound": {
@@ -10,25 +66,44 @@
     "reasons_title": "何が起きたのでしょうか？",
     "reason_1": "URLに小さな入力ミスがあったかもしれません。",
     "reason_2": "クリックしたリンクが古いか、壊れています。",
-    "reason_3": "更新により、ページが移動または名前変更されました。",
-    "back_button": "ホームに戻る"
-  },
-
-  "persona_banner": {
-    "label_casual": "カジュアルモード",
-    "label_pro": "プロフェッショナルモード",
-    "title_casual": "サイドクエスト、受けてみる？",
-    "title_pro": "ビジネスの話をしようか？",
-    "desc_casual": "今は私の「仕事モード」を見ていますが、実は隠しエリアがあると言ったら？ブログや趣味など、もっとリラックスした私の一面を覗いてみませんか。",
-    "desc_pro": "今は私のプライベートな一面を見ています。でも、もしスーツを着て、真剣なプロジェクトや履歴書、技術スキルを確認したいなら、鍵を回すだけでOKです。",
-    "button_casual": "いくぞ！",
-    "button_pro": "見せて"
+    "reason_3": "更新により、ページが移動または名前変更されました。"
   },
 
   "title": {
     "home": "ホーム",
-    "notfound": "ページが見つかりません"
+    "notfound": "ページが見つかりません",
+    "about": "プロフィール",
+    "blog": "ブログ",
+    "contact": "お問い合わせ"
   },
 
-  "select_lang": "言語を選択"
+  "ui": {
+    "copied": "コピーしました！",
+    "cover_cape": "カバー画像",
+    "creating_post": "新しい記事を作成中",
+    "editing_post": "記事を編集",
+    "editor": "エディター",
+    "editor_ph": "ここにテキストを入力...",
+    "fill_all_fields": "すべての必須項目を入力する必要があります。",
+    "image_legend_ph": "画像のキャプションを入力（任意）...",
+    "image_link_ph": "URLまたはアップロード",
+    "loading": "読み込み中...",
+    "loading_post": "記事を読み込み中...",
+    "loading_post_error": "記事の読み込み中にエラーが発生しました。",
+    "logging": "ログイン中...",
+    "no_posts_topic": "このトピックにはまだ記事がありません。",
+    "no_posts_yet": "記事はまだ見つかりませんでした。",
+    "post_not_found": "記事が見つかりません",
+    "preview": "プレビュー",
+    "saving_post_error": "保存中にエラーが発生しました。権限または重複するスラッグを確認してください。",
+    "select": "選択...",
+    "select_lang": "言語を選択",
+    "topic_not_found": "トピックが見つかりません",
+    "upload_error": "アップロード中にエラーが発生しました。"
+  },
+
+  "wip": {
+    "title": "このサイトはまだ作成中です。",
+    "text": "空白のページやエラーが発生する可能性があります。"
+  }
 }

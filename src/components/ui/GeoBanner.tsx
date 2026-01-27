@@ -159,7 +159,6 @@ export default function GeoBanner() {
               <button
                 onClick={dismiss}
                 className="p-1.5 hover:bg-white/20 rounded-full transition-colors"
-                aria-label="Fechar"
               >
                 <X size={18} />
               </button>

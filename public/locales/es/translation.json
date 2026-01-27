@@ -1,7 +1,63 @@
 {
+  "admin": {
+    "title": "Panel de control",
+    "subtitle": "Lorem ipsum dolor",
+    "table_title": "Título",
+    "table_topic": "Tema",
+    "table_slug": "Slug",
+    "table_date": "Fecha",
+    "table_actions": "Acciones",
+    "empty_state": "Aún no tienes publicaciones.",
+    "delete_confirm": "¿Seguro que deseas eliminar esta publicación?"
+  },
+
+  "auth": {
+    "title": "Acceso restringido",
+    "email_placeholder": "ejemplo@email.com",
+    "password_placeholder": "Ingresa tu contraseña",
+    "error_missing_fields": "Debes completar todos los campos.",
+    "error_invalid_auth": "Correo o contraseña incorrectos. Inténtalo de nuevo.",
+    "error_generic": "Ocurrió un error inesperado."
+  },
+
+  "button": {
+    "cancel": "Cancelar",
+    "copy": "Copiar",
+    "edit_post": "Editar publicación",
+    "login": "Entrar",
+    "logout": "Cerrar sesión",
+    "new_post": "Nueva publicación",
+    "publish_post": "Publicar",
+    "read_more": "Leer más",
+    "return": "Volver",
+    "return_home": "Volver al inicio",
+    "see_all_posts": "Ver todas las publicaciones",
+    "update_post": "Actualizar",
+    "upload": "Subir"
+  },
+
+  "categories": {
+    "coding": "Programación",
+    "gaming": "Juegos",
+    "life": "Vida personal",
+    "music": "Música",
+    "travel": "Viajes"
+  },
+
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+
   "geo_banner": {
     "text": "Parece que estás en <strong>{{country}}</strong>. ¿Deseas cambiar el idioma a <strong>{{lang}}</strong>?",
     "yes": "Cambiar"
+  },
+
+  "menu": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "blog": "Blog",
+    "contact": "Contacto"
   },
 
   "notfound": {
@@ -10,25 +66,44 @@
     "reasons_title": "¿Qué pudo haber pasado?",
     "reason_1": "Hubo un pequeño error de escritura en la URL.",
     "reason_2": "El enlace en el que hiciste clic es antiguo o está roto.",
-    "reason_3": "La página fue movida o renombrada durante una actualización.",
-    "back_button": "Volver al inicio"
-  },
-
-  "persona_banner": {
-    "label_casual": "Modo casual",
-    "label_pro": "Modo profesional",
-    "title_casual": "¿Te animas a una misión extra?",
-    "title_pro": "¿Hablamos de negocios?",
-    "desc_casual": "Estás navegando por mi lado profesional, ¿pero y si te dijera que hay una zona secreta por aquí? Te invito a conocer mi faceta más relajada, leer mi blog y ver qué hago en mi tiempo libre.",
-    "desc_pro": "Estás viendo mi lado personal, pero si prefieres ponerte el traje, ir a lo serio y revisar mis proyectos, currículum y habilidades técnicas, solo tienes que girar la llave.",
-    "button_casual": "¡Vamos allá!",
-    "button_pro": "Muéstrame"
+    "reason_3": "La página fue movida o renombrada durante una actualización."
   },
 
   "title": {
-    "home": "Inicio",
-    "notfound": "Página no encontrada"
+    "home": "Página de inicio",
+    "notfound": "Página no encontrada",
+    "about": "Sobre mí",
+    "blog": "Blog",
+    "contact": "Contacto"
   },
 
-  "select_lang": "Seleccionar idioma"
+  "ui": {
+    "copied": "¡Copiado!",
+    "cover_cape": "Imagen de portada",
+    "creating_post": "Creando nueva publicación",
+    "editing_post": "Editando publicación",
+    "editor": "Editor",
+    "editor_ph": "Escribe el texto aquí...",
+    "fill_all_fields": "Debes completar todos los campos obligatorios.",
+    "image_legend_ph": "Escribe un pie de foto (opcional)...",
+    "image_link_ph": "URL o subir archivo",
+    "loading": "Cargando...",
+    "loading_post": "Cargando publicación...",
+    "loading_post_error": "Error al cargar la publicación.",
+    "logging": "Entrando...",
+    "no_posts_topic": "Aún no hay publicaciones en este tema.",
+    "no_posts_yet": "Aún no se encontraron publicaciones.",
+    "post_not_found": "Publicación no encontrada",
+    "preview": "Vista previa",
+    "saving_post_error": "Error al guardar. Verifica permisos o slug duplicado.",
+    "select": "Seleccionar...",
+    "select_lang": "Seleccionar idioma",
+    "topic_not_found": "Tema no encontrado",
+    "upload_error": "Error al subir."
+  },
+
+  "wip": {
+    "title": "Este sitio todavía está en construcción.",
+    "text": "Espera páginas en blanco o posibles errores."
+  }
 }

@@ -1,7 +1,63 @@
 {
+  "admin": {
+    "title": "Painel de controle",
+    "subtitle": "Lorem ipsum dolor",
+    "table_title": "Título",
+    "table_topic": "Tópico",
+    "table_slug": "Slug",
+    "table_date": "Data",
+    "table_actions": "Ações",
+    "empty_state": "Você ainda não tem postagens.",
+    "delete_confirm": "Deseja mesmo deletar este post?"
+  },
+
+  "auth": {
+    "title": "Acesso restrito",
+    "email_placeholder": "exemplo@email.com",
+    "password_placeholder": "Digite sua senha",
+    "error_missing_fields": "É necessário preencher todos os campos.",
+    "error_invalid_auth": "E-mail ou senha incorretos. Tente novamente.",
+    "error_generic": "Ocorreu um erro inesperado."
+  },
+
+  "button": {
+    "cancel": "Cancelar",
+    "copy": "Copiar",
+    "edit_post": "Editar postagem",
+    "login": "Entrar",
+    "logout": "Sair da conta",
+    "new_post": "Nova postagem",
+    "publish_post": "Publicar",
+    "read_more": "Ler mais",
+    "return": "Voltar",
+    "return_home": "Voltar para o início",
+    "see_all_posts": "Ver todas as postagens",
+    "update_post": "Atualizar",
+    "upload": "Enviar"
+  },
+
+  "categories": {
+    "coding": "Programação",
+    "gaming": "Jogos",
+    "life": "Vida pessoal",
+    "music": "Música",
+    "travel": "Viagem"
+  },
+
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  },
+
   "geo_banner": {
     "text": "Parece que você está em <strong>{{country}}</strong>. Deseja mudar o idioma para <strong>{{lang}}</strong>?",
     "yes": "Mudar"
+  },
+
+  "menu": {
+    "home": "Início",
+    "about": "Sobre mim",
+    "blog": "Blog",
+    "contact": "Contato"
   },
 
   "notfound": {
@@ -10,25 +66,44 @@
     "reasons_title": "O que pode ter acontecido?",
     "reason_1": "Houve um pequeno erro de digitação na URL.",
     "reason_2": "O link que você clicou é antigo ou está quebrado.",
-    "reason_3": "A página foi movida ou renomeada durante uma atualização.",
-    "back_button": "Voltar para o início"
-  },
-
-  "persona_banner": {
-    "label_casual": "Modo casual",
-    "label_pro": "Modo profissional",
-    "title_casual": "Topa uma side quest?",
-    "title_pro": "Vamos falar de negócios?",
-    "desc_casual": "Você está navegando pelo meu lado profissional, mas e se eu te contar que tem uma área escondida por aqui? Eu te convido a conhecer mais sobre mim no meu lado casual, onde você pode ler postagens diversas no meu blog e muito mais.",
-    "desc_pro": "Você está navegando pelo meu lado casual, mas se quiser vestir um terno e gravata, ir para uma área mais séria e conhecer vários projetos, meu currículo e habilidades técnicas, é só virar a chave.",
-    "button_casual": "É pra já!",
-    "button_pro": "Mostre-me"
+    "reason_3": "A página foi movida ou renomeada durante uma atualização."
   },
 
   "title": {
     "home": "Página inicial",
-    "notfound": "Página não encontrada"
+    "notfound": "Página não encontrada",
+    "about": "Sobre mim",
+    "blog": "Blog",
+    "contact": "Contato"
   },
 
-  "select_lang": "Selecionar idioma"
+  "ui": {
+    "copied": "Copiado!",
+    "cover_cape": "Imagem da capa",
+    "creating_post": "Criando nova postagem",
+    "editing_post": "Editando postagem",
+    "editor": "Editor",
+    "editor_ph": "Digite o texto aqui...",
+    "fill_all_fields": "É necessário preencher todos os campos obrigatórios.",
+    "image_legend_ph": "Escreva uma legenda para a imagem (opcional)...",
+    "image_link_ph": "URL ou faça upload",
+    "loading": "Carregando...",
+    "loading_post": "Carregando postagem...",
+    "loading_post_error": "Ocorreu um erro ao carregar a postagem.",
+    "logging": "Entrando...",
+    "no_posts_topic": "Não há postagens neste tópico ainda.",
+    "no_posts_yet": "Nenhuma postagem encontrada ainda.",
+    "post_not_found": "Postagem não encontrada",
+    "preview": "Pré-visualização",
+    "saving_post_error": "Ocorreu um erro ao salvar. Verifique as permissões ou slugs duplicados.",
+    "select": "Selecione...",
+    "select_lang": "Selecionar idioma",
+    "topic_not_found": "Tópico não encontrado",
+    "upload_error": "Ocorreu um erro ao enviar."
+  },
+
+  "wip": {
+    "title": "Este site ainda está em andamento.",
+    "text": "Espere páginas em branco ou possíveis erros."
+  }
 }

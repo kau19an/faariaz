@@ -1,7 +1,63 @@
 {
+  "admin": {
+    "title": "Kontrollpanel",
+    "subtitle": "Lorem ipsum dolor",
+    "table_title": "Titel",
+    "table_topic": "Thema",
+    "table_slug": "Slug",
+    "table_date": "Datum",
+    "table_actions": "Aktionen",
+    "empty_state": "Sie haben noch keine Beiträge.",
+    "delete_confirm": "Möchten Sie diesen Beitrag wirklich löschen?"
+  },
+
+  "auth": {
+    "title": "Eingeschränkter Zugriff",
+    "email_placeholder": "beispiel@email.com",
+    "password_placeholder": "Geben Sie Ihr Passwort ein",
+    "error_missing_fields": "Alle Felder müssen ausgefüllt werden.",
+    "error_invalid_auth": "E-Mail oder Passwort falsch. Bitte versuchen Sie es erneut.",
+    "error_generic": "Ein unerwarteter Fehler ist aufgetreten."
+  },
+
+  "button": {
+    "cancel": "Abbrechen",
+    "copy": "Kopieren",
+    "edit_post": "Beitrag bearbeiten",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "new_post": "Neuer Beitrag",
+    "publish_post": "Veröffentlichen",
+    "read_more": "Mehr lesen",
+    "return": "Zurück",
+    "return_home": "Zurück zur Startseite",
+    "see_all_posts": "Alle Beiträge anzeigen",
+    "update_post": "Aktualisieren",
+    "upload": "Hochladen"
+  },
+
+  "categories": {
+    "coding": "Programmierung",
+    "gaming": "Gaming",
+    "life": "Persönliches",
+    "music": "Musik",
+    "travel": "Reisen"
+  },
+
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
+
   "geo_banner": {
     "text": "Es scheint, dass Sie sich in <strong>{{country}}</strong> befinden. Möchten Sie die Sprache auf <strong>{{lang}}</strong> ändern?",
     "yes": "Ändern"
+  },
+
+  "menu": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "blog": "Blog",
+    "contact": "Kontakt"
   },
 
   "notfound": {
@@ -10,25 +66,44 @@
     "reasons_title": "Was könnte passiert sein?",
     "reason_1": "Es gab einen kleinen Tippfehler in der URL.",
     "reason_2": "Der Link, den du angeklickt hast, ist alt oder defekt.",
-    "reason_3": "Die Seite wurde während eines Updates verschoben oder umbenannt.",
-    "back_button": "Zurück zur Startseite"
-  },
-
-  "persona_banner": {
-    "label_casual": "Casual Modus",
-    "label_pro": "Profi-Modus",
-    "title_casual": "Lust auf eine Nebenmission?",
-    "title_pro": "Kommen wir zum Geschäftlichen?",
-    "desc_casual": "Du befindest dich auf meiner professionellen Seite, aber wusstest du, dass es hier ein verstecktes Level gibt? Lern meine entspannte Seite kennen, lies meinen Blog und schau dir an, was ich sonst so mache.",
-    "desc_pro": "Du siehst gerade meine private Seite. Wenn du aber in Anzug und Krawatte schlüpfen und meine ernsten Projekte, meinen Lebenslauf und meine Skills sehen willst, musst du nur den Schlüssel umdrehen.",
-    "button_casual": "Los geht's!",
-    "button_pro": "Zeig es mir"
+    "reason_3": "Die Seite wurde während eines Updates verschoben oder umbenannt."
   },
 
   "title": {
     "home": "Startseite",
-    "notfound": "Seite nicht gefunden"
+    "notfound": "Seite nicht gefunden",
+    "about": "Über mich",
+    "blog": "Blog",
+    "contact": "Kontakt"
   },
 
-  "select_lang": "Sprache auswählen"
+  "ui": {
+    "copied": "Kopiert!",
+    "cover_cape": "Titelbild",
+    "creating_post": "Neuen Beitrag erstellen",
+    "editing_post": "Beitrag bearbeiten",
+    "editor": "Editor",
+    "editor_ph": "Text hier eingeben...",
+    "fill_all_fields": "Alle Pflichtfelder müssen ausgefüllt werden.",
+    "image_legend_ph": "Bildunterschrift eingeben (optional)...",
+    "image_link_ph": "URL oder hochladen",
+    "loading": "Laden...",
+    "loading_post": "Beitrag wird geladen...",
+    "loading_post_error": "Fehler beim Laden des Beitrags.",
+    "logging": "Anmeldung...",
+    "no_posts_topic": "Noch keine Beiträge in diesem Thema.",
+    "no_posts_yet": "Noch keine Beiträge gefunden.",
+    "post_not_found": "Beitrag nicht gefunden",
+    "preview": "Vorschau",
+    "saving_post_error": "Fehler beim Speichern. Überprüfen Sie Berechtigungen oder doppelte Slugs.",
+    "select": "Auswählen...",
+    "select_lang": "Sprache auswählen",
+    "topic_not_found": "Thema nicht gefunden",
+    "upload_error": "Fehler beim Hochladen."
+  },
+
+  "wip": {
+    "title": "Diese Website befindet sich noch im Aufbau.",
+    "text": "Erwarten Sie leere Seiten oder mögliche Fehler."
+  }
 }

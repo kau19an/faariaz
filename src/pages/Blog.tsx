@@ -1,0 +1,177 @@
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { supabase } from "../lib/supabase";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
+import PageHead from "../components/seo/PageHead";
+import IconMapper from "../components/ui/IconMapper";
+import {
+  formatDate,
+  getReadingTime,
+  getLocalizedPath,
+  removeMarkdown,
+} from "../lib/utils";
+
+interface Post {
+  id: number;
+  slug: string;
+  created_at: string;
+  title: string;
+  content: string;
+  cover_image?: string;
+  categories: {
+    slug: string;
+    icon: string;
+  } | null;
+}
+
+export default function Blog() {
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
+
+  useEffect(() => {
+    fetchPosts();
+  }, []);
+
+  async function fetchPosts() {
+    const { data, error } = await supabase
+      .from("posts")
+      .select(`*, categories (slug, icon)`)
+      .order("created_at", { ascending: false });
+
+    if (error) console.error("Error:", error);
+    else setPosts(data || []);
+
+    setLoading(false);
+  }
+
+  const containerVars = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+  };
+
+  const itemVars = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  return (
+    <>
+      <PageHead titleKey="title.blog" />
+
+      <div className="min-h-screen pt-5 px-6 max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-10 text-center"
+        >
+          <h1 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-gray-700">
+            {t("title.blog")}
+          </h1>
+        </motion.div>
+
+        {loading ? (
+          <div className="space-y-6">
+            {[1, 2, 3].map((i) => (
+              <div
+                key={i}
+                className="h-40 w-70 bg-gray-200 rounded-2xl animate-pulse"
+              />
+            ))}
+          </div>
+        ) : (
+          <motion.div
+            variants={containerVars}
+            initial="hidden"
+            animate="visible"
+            className="grid gap-6"
+          >
+            {posts.length === 0 ? (
+              <p className="text-center text-gray-500">
+                {t("ui.no_posts_yet")}
+              </p>
+            ) : (
+              posts.map((post) => {
+                const readingMinutes = getReadingTime(post.content);
+                const minLabel = readingMinutes === 1 ? "min" : "mins";
+
+                return (
+                  <motion.article
+                    key={post.id}
+                    variants={itemVars}
+                    className="group relative bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+                  >
+                    {post.cover_image && (
+                      <Link
+                        to={getLocalizedPath(`blog/${post.slug}`, currentLang)}
+                        className="block mb-6 -mx-6 -mt-6 overflow-hidden aspect-video border-b border-gray-100"
+                      >
+                        <img
+                          src={post.cover_image}
+                          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                        />
+                      </Link>
+                    )}
+
+                    {post.categories && (
+                      <div className="mb-4">
+                        <Link
+                          to={getLocalizedPath(
+                            `blog/topic/${post.categories.slug}`,
+                            currentLang,
+                          )}
+                          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-600 text-xs font-bold uppercase tracking-wider hover:bg-blue-200 transition-colors"
+                        >
+                          <IconMapper
+                            name={post.categories.icon}
+                            className="w-3 h-3"
+                          />
+                          {t(`categories.${post.categories.slug}`)}
+                        </Link>
+                      </div>
+                    )}
+
+                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                      <span className="flex items-center gap-1">
+                        <Calendar size={14} />
+                        {formatDate(post.created_at, currentLang)}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock size={14} />
+                        {readingMinutes} {minLabel}
+                      </span>
+                    </div>
+
+                    <h2 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                      {post.title}
+                    </h2>
+
+                    <p className="text-gray-600 line-clamp-3 mb-4">
+                      {removeMarkdown(post.content)}
+                    </p>
+
+                    <Link
+                      to={getLocalizedPath(`blog/${post.slug}`, currentLang)}
+                      state={{ from: location }}
+                      className="inline-flex items-center text-blue-600 font-medium cursor-pointer"
+                    >
+                      {t("button.read_more")}{" "}
+                      <ArrowRight
+                        size={16}
+                        className="ml-2 group-hover:translate-x-1 transition-transform"
+                      />
+                    </Link>
+                  </motion.article>
+                );
+              })
+            )}
+          </motion.div>
+        )}
+      </div>
+    </>
+  );
+}
