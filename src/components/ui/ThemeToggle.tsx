@@ -6,7 +6,7 @@ export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="flex items-center gap-1 p-1 bg-gray-100 rounded-full border border-gray-200 shadow-inner">
+    <div className="flex items-center gap-1 p-1 bg-gray-50 text-neutral-800 dark:bg-zinc-900 dark:text-gray-100 rounded-full border border-gray-200 dark:border-zinc-700">
       <button
         onClick={() => toggleTheme("light")}
         className="relative z-10 p-1.5 rounded-full transition-colors duration-200 cursor-pointer"
@@ -14,7 +14,7 @@ export default function ThemeToggle() {
         <Sun
           size={16}
           className={`transition-colors ${
-            theme === "light" ? "text-yellow-600" : "text-gray-400"
+            theme === "light" ? "text-yellow-600" : "text-gray-100"
           }`}
         />
 

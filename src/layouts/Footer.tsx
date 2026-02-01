@@ -5,9 +5,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-4 bg-gray-100 border-t border-gray-200 text-center transition-colors">
+    <footer className="py-4 bg-gray-100 dark:bg-zinc-800/50 text-center transition-colors">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-4">
-        <p className="text-sm text-gray-500 font-medium">
+        <p className="text-sm text-zinc-800 dark:text-gray-100 font-medium">
           © {currentYear} - Kauan Farias. {t("footer.rights")}
         </p>
       </div>

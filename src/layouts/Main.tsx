@@ -36,7 +36,7 @@ export default function Main() {
   if (isAdjusting) return null;
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 transition-colors duration-300 font-sans">
+    <div className="bg-gray-50 text-neutral-800 dark:bg-zinc-900 dark:text-gray-100 min-h-screen flex flex-col transition-colors duration-300 font-sans">
       <GeoBanner />
       {!isInvalidLang && <Header />}
 

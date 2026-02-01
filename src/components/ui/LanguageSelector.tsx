@@ -58,11 +58,11 @@ export default function LanguageSelector() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`
-          flex items-center gap-2 px-3 py-2 rounded-full border transition-all duration-200 cursor-pointer
+          flex items-center gap-2 px-3 py-2 rounded-full border transition-all duration-200 cursor-pointer dark:border-zinc-700  dark:text-gray-100
           ${
             isOpen
-              ? "border-blue-500 bg-blue-50 text-blue-600"
-              : "border-gray-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
+              ? "text-blue-600 border-blue-600 dark:border-zinc-400 dark:text-gray-100"
+              : "text-neutral-800 border-gray-200 hover:bg-gray-200 dark:hover:bg-zinc-800"
           }
         `}
       >
@@ -88,10 +88,10 @@ export default function LanguageSelector() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -10, scale: 0.95 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="absolute top-full right-0 mt-2 w-44 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50 origin-top-right"
+              className="absolute top-full right-0 mt-2 w-44 bg-white dark:bg-zinc-800 rounded-2xl shadow-xl overflow-hidden z-50 origin-top-right"
             >
               <div className="max-h-64 overflow-y-auto py-2 custom-scrollbar text-center">
-                <div className="px-3 pb-2 mb-2 border-b border-gray-100">
+                <div className="px-3 pb-2 mb-2 border-b border-gray-200 dark:border-zinc-700">
                   <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
                     {t("ui.select_lang")}
                   </span>
@@ -104,8 +104,8 @@ export default function LanguageSelector() {
                     className={`w-full text-left px-4 py-2.5 flex items-center justify-between transition-colors text-sm cursor-pointer
                       ${
                         i18n.language === lang.code
-                          ? "bg-blue-50 text-blue-600 font-medium"
-                          : "text-gray-600 hover:bg-gray-50"
+                          ? "bg-blue-50 hover:bg-blue-100/60 text-blue-600 dark:bg-zinc-700/40 dark:text-gray-200 font-medium hover:dark:bg-zinc-700/30"
+                          : "text-gray-600 dark:text-zinc-300/90 hover:bg-gray-100/50 hover:dark:bg-zinc-700/30"
                       }
                     `}
                   >
@@ -117,7 +117,7 @@ export default function LanguageSelector() {
                     </div>
                     {i18n.language === lang.code && (
                       <motion.div layoutId="check-icon">
-                        <Check className="w-4 h-4 text-blue-600" />
+                        <Check className="w-4 h-4 text-blue-600 dark:text-gray-100" />
                       </motion.div>
                     )}
                   </button>

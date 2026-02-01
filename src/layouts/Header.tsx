@@ -22,10 +22,10 @@ export default function Header() {
     { label: "menu.home", path: "/" },
     { label: "menu.about", path: "/about" },
     { label: "menu.blog", path: "blog" },
-    { label: "menu.contact", path: "/contact" },
+    { label: "menu.projects", path: "/projects" },
   ];
   const buttonStyles =
-    "p-2 rounded-full border border-gray-200 text-gray-500 hover:bg-gray-200 transition-colors";
+    "p-2 rounded-full border hover:bg-gray-200 dark:hover:bg-zinc-800 border-gray-200 dark:border-zinc-700 text-neutral-800 dark:text-gray-100 transition-colors";
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex flex-col transition-all duration-300 font-sans">
@@ -34,7 +34,7 @@ export default function Header() {
       </div>
 
       <header
-        className={`w-full h-16 transition-all duration-300 bg-gray-50 relative z-50`}
+        className={`w-full h-16 transition-all duration-300 bg-gray-50 text-neutral-800 dark:bg-zinc-900 dark:text-gray-100 relative z-50`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -44,7 +44,7 @@ export default function Header() {
             >
               <img
                 src="/assets/images/logo-200.png"
-                className="w-10 h-10 sm:w-12 sm:h-12 object-contain select-none pointer-events-none"
+                className="w-12 h-12 object-contain select-none pointer-events-none"
               />
             </Link>
 
@@ -56,16 +56,13 @@ export default function Header() {
             </button>
           </div>
 
-          <nav className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          {/* Desktop: Menu */}
+          <nav className="hidden md:flex items-center gap-6 absolute ml-18">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={getLocalizedPath(link.path, currentLang)}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  location.pathname.includes(link.path) && link.path !== "/"
-                    ? "text-blue-600"
-                    : "text-gray-600"
-                }`}
+                className="text-sm font-bold uppercase hover:underline hover:underline-offset-4 transition-colors hover:text-blue-600 dark:hover:text-yellow-400 dark:text-gray-100 text-neutral-800"
               >
                 {t(link.label)}
               </Link>
@@ -79,8 +76,9 @@ export default function Header() {
         </div>
       </header>
 
+      {/* Mobile: Menu (dropdown) */}
       <div
-        className={`absolute top-full left-0 w-full h-screen bg-gray-50 backdrop-blur-xl border-t border-gray-100 transition-all duration-300 origin-top z-40 ${
+        className={`absolute top-full left-0 w-full h-screen bg-gray-50 text-neutral-800 dark:bg-zinc-900 dark:text-gray-100 backdrop-blur-xl transition-all duration-300 origin-top z-40 ${
           isMobileMenuOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-4 pointer-events-none"
@@ -92,7 +90,7 @@ export default function Header() {
               key={link.path}
               to={getLocalizedPath(link.path, currentLang)}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-xl font-bold text-gray-800 py-4 border-b border-gray-100 hover:pl-2 transition-all"
+              className="text-xl font-bold py-4 not-last:border-b border-gray-200 dark:border-zinc-800 hover:text-blue-600 dark:hover:text-yellow-400 hover:pl-2 transition-all uppercase"
             >
               {t(link.label)}
             </Link>
