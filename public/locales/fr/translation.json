@@ -55,9 +55,7 @@
 
   "menu": {
     "home": "Accueil",
-    "about": "À propos",
     "blog": "Blog",
-    "contact": "Contact",
     "projects": "Projets"
   },
 
