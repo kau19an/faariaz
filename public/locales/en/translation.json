@@ -68,6 +68,24 @@
     "reason_3": "The page was moved or renamed during an update."
   },
 
+  "seo": {
+    "blog": {
+      "description": "Read my latest articles about several topics."
+    },
+    "category": {
+      "description": "All posts about {{category}}."
+    },
+    "home": {
+      "description": "Overview of Kauan Farias' projects, abilities and experiences as a developer."
+    },
+    "login": {
+      "description": "Restricted area only for administrators."
+    },
+    "notfound": {
+      "description": "Page not found."
+    }
+  },
+
   "title": {
     "home": "Home",
     "notfound": "Page not found",

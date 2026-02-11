@@ -68,6 +68,24 @@
     "reason_3": "Die Seite wurde während eines Updates verschoben oder umbenannt."
   },
 
+  "seo": {
+    "blog": {
+      "description": "Lesen Sie meine neuesten Artikel zu verschiedenen Themen."
+    },
+    "category": {
+      "description": "Alle Beiträge über {{category}}."
+    },
+    "home": {
+      "description": "Überblick über Projekte, Fähigkeiten und Erfahrungen von Kauan Farias als Entwickler."
+    },
+    "login": {
+      "description": "Geschützter Bereich für Administratoren."
+    },
+    "notfound": {
+      "description": "Seite nicht gefunden."
+    }
+  },
+
   "title": {
     "home": "Startseite",
     "notfound": "Seite nicht gefunden",

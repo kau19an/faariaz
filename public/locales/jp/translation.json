@@ -68,6 +68,24 @@
     "reason_3": "更新により、ページが移動または名前変更されました。"
   },
 
+  "seo": {
+    "blog": {
+      "description": "様々なトピックに関する最新記事をご覧ください。"
+    },
+    "category": {
+      "description": "{{category}} に関するすべての投稿。"
+    },
+    "home": {
+      "description": "開発者としてのKauan Fariasのプロジェクト、スキル、経験の概要。"
+    },
+    "login": {
+      "description": "管理者専用エリア。"
+    },
+    "notfound": {
+      "description": "ページが見つかりません。"
+    }
+  },
+
   "title": {
     "home": "ホーム",
     "notfound": "ページが見つかりません",
