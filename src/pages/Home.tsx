@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <SEO
         title={t("title.home")}
-        description="Página inicial de Kauan Farias, apresentando uma visão geral de seus projetos, habilidades e experiências como desenvolvedor."
+        description={t("seo.home.description")}
         slug="/"
       />
 

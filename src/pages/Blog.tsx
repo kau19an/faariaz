@@ -63,7 +63,7 @@ export default function Blog() {
     <>
       <SEO
         title={t("title.blog")}
-        description="Leia meus últimos artigos sobre diversos tópicos."
+        description={t("seo.blog.description")}
         slug="/blog"
       />
 

@@ -44,7 +44,7 @@ export default function Login() {
     <>
       <SEO
         title={t("auth.title")}
-        description="Faça login para acessar o painel administrativo."
+        description={t("seo.login.description")}
         slug="/login"
       />
 

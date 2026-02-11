@@ -81,6 +81,23 @@ export default function Post() {
     ? getLocalizedPath(`blog/topic/${post.categories.slug}`, currentLang)
     : "#";
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: removeMarkdown(post.content).substring(0, 160),
+    image: post.cover_image ? [post.cover_image] : [],
+    datePublished: post.created_at,
+    dateModified: post.updated_at || post.created_at,
+    author: [
+      {
+        "@type": "Person",
+        name: "Kauan Farias",
+        url: "https://faariaz.vercel.app",
+      },
+    ],
+  };
+
   return (
     <>
       <SEO
@@ -90,6 +107,10 @@ export default function Post() {
         type="article"
         slug={`/blog/${post.slug}`}
       />
+
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
 
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-blue-600 dark:bg-yellow-400 origin-left z-60"

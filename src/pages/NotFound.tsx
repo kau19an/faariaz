@@ -54,7 +54,11 @@ export default function NotFound() {
 
   return (
     <>
-      <SEO title={t("title.notfound")} slug="/404" />
+      <SEO
+        title={t("title.notfound")}
+        description={t("seo.notfound.description")}
+        slug="/404"
+      />
 
       <div className="hidden">
         <ThemeToggle />

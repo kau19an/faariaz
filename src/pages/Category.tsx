@@ -71,7 +71,7 @@ export default function Category() {
     <>
       <SEO
         title={categoryName}
-        description={`Posts e conteúdos sobre ${categoryName}.`}
+        description={t("seo.category.description", { category: categoryName })}
         slug={`/blog/topic/${slug}`}
       />
 
