@@ -1,15 +1,23 @@
 import { Routes, Route } from "react-router-dom";
+
+// Components
+import ProtectedRoute from "./components/auth/ProtectedRoute";
+import LanguageRedirector from "./components/LanguageRedirector";
+
+// Main pages
 import Main from "./layouts/Main";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+
+// Login and dashboard
+import Login from "./pages/Login";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+
+// Blog
 import Blog from "./pages/Blog";
 import Post from "./pages/Post";
-import Category from "./pages/Category";
-import Login from "./pages/Login";
-import ProtectedRoute from "./components/auth/ProtectedRoute";
-import AdminDashboard from "./pages/admin/AdminDashboard";
 import PostEditor from "./pages/admin/PostEditor";
-import LanguageRedirector from "./components/LanguageRedirector";
+import Category from "./pages/Category";
 
 function App() {
   return (
@@ -32,6 +40,8 @@ function App() {
         {/* Languages */}
         <Route path="/:lang" element={<Main />}>
           <Route index element={<Home />} />
+
+          {/* Blog */}
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<Post />} />
           <Route path="blog/topic/:slug" element={<Category />} />

@@ -3,7 +3,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { AlertCircle, Lock, Mail, Loader2 } from "lucide-react";
-import PageHead from "../components/seo/PageHead";
+import SEO from "../components/seo/SEO";
 import ThemeToggle from "../components/ui/ThemeToggle";
 import LanguageSelector from "../components/ui/LanguageSelector";
 import { getLocalizedPath } from "../lib/utils";
@@ -36,14 +36,17 @@ export default function Login() {
       setLocalError(t("auth.error_invalid_auth"));
       setIsSubmitting(false);
     } else {
-      // ATUALIZADO: Redireciona mantendo o idioma atual
       navigate(getLocalizedPath("/admin", i18n.language));
     }
   };
 
   return (
     <>
-      <PageHead titleKey="auth.title" />
+      <SEO
+        title={t("auth.title")}
+        description="Faça login para acessar o painel administrativo."
+        slug="/login"
+      />
 
       <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-neutral-950 transition-colors px-4 relative">
         <div className="absolute top-6 left-6 z-10">

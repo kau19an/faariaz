@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { supabase } from "../../lib/supabase";
 import { Plus, Edit, Trash2, LogOut, FileText } from "lucide-react";
 import { useAuth } from "../../contexts/AuthContext";
-import PageHead from "../../components/seo/PageHead";
+import SEO from "../../components/seo/SEO";
 import { formatDate } from "../../lib/utils";
 import ThemeToggle from "../../components/ui/ThemeToggle";
 import LanguageSelector from "../../components/ui/LanguageSelector";
@@ -39,7 +39,8 @@ export default function AdminDashboard() {
 
   return (
     <>
-      <PageHead titleKey="admin.title" />
+      <SEO title={t("admin.title")} slug="/admin" />
+
       <div className="min-h-screen bg-gray-50 p-8 transition-colors">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">

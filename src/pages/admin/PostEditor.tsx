@@ -11,7 +11,7 @@ import {
   Upload,
   Trash2,
 } from "lucide-react";
-import PageHead from "../../components/seo/PageHead";
+import SEO from "../../components/seo/SEO";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import CodeBlock from "../../components/ui/CodeBlock";
@@ -159,8 +159,9 @@ export default function PostEditor() {
 
   return (
     <>
-      <PageHead
-        titleKey={isEditing ? t("ui.editing_post") : t("ui.creating_post")}
+      <SEO
+        title={isEditing ? t("ui.editing_post") : t("ui.creating_post")}
+        slug="/admin"
       />
 
       <div className="min-h-screen bg-gray-50 p-6 flex flex-col">

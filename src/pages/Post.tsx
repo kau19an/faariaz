@@ -3,9 +3,14 @@ import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { supabase } from "../lib/supabase";
 import { Calendar, Clock, AlertCircle, Home, ChevronRight } from "lucide-react";
-import PageHead from "../components/seo/PageHead";
+import SEO from "../components/seo/SEO";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { formatDate, getReadingTime, getLocalizedPath } from "../lib/utils";
+import {
+  formatDate,
+  getReadingTime,
+  getLocalizedPath,
+  removeMarkdown,
+} from "../lib/utils";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import CodeBlock from "../components/ui/CodeBlock";
@@ -78,9 +83,12 @@ export default function Post() {
 
   return (
     <>
-      <PageHead
-        titleKey={post.title}
-        descriptionKey={post.content.substring(0, 100)}
+      <SEO
+        title={post.title}
+        description={removeMarkdown(post.content).substring(0, 160) + "..."}
+        image={post.cover_image}
+        type="article"
+        slug={`/blog/${post.slug}`}
       />
 
       <motion.div

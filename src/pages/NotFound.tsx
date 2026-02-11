@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { MapPinOff, ArrowLeft, Search, FileX, Fingerprint } from "lucide-react";
 import { useFavicon } from "../hooks/useFavicon";
-import PageHead from "../components/seo/PageHead";
+import SEO from "../components/seo/SEO";
 import ThemeToggle from "../components/ui/ThemeToggle";
 import LanguageSelector from "../components/ui/LanguageSelector";
 
@@ -54,7 +54,7 @@ export default function NotFound() {
 
   return (
     <>
-      <PageHead titleKey="title.notfound" />
+      <SEO title={t("title.notfound")} slug="/404" />
 
       <div className="hidden">
         <ThemeToggle />

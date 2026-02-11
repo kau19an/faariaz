@@ -5,7 +5,7 @@ import { supabase } from "../lib/supabase";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, AlertCircle, FolderOpen } from "lucide-react";
 import IconMapper from "../components/ui/IconMapper";
-import PageHead from "../components/seo/PageHead";
+import SEO from "../components/seo/SEO";
 import { getLocalizedPath, removeMarkdown } from "../lib/utils";
 
 export default function Category() {
@@ -69,7 +69,11 @@ export default function Category() {
 
   return (
     <>
-      <PageHead titleKey={`${categoryName}`} />
+      <SEO
+        title={categoryName}
+        description={`Posts e conteúdos sobre ${categoryName}.`}
+        slug={`/blog/topic/${slug}`}
+      />
 
       <div className="w-full md:max-w-3xl px-2 mx-auto">
         <Link

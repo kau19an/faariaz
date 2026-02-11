@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { supabase } from "../lib/supabase";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import PageHead from "../components/seo/PageHead";
+import SEO from "../components/seo/SEO";
 import IconMapper from "../components/ui/IconMapper";
 import {
   formatDate,
@@ -61,7 +61,11 @@ export default function Blog() {
 
   return (
     <>
-      <PageHead titleKey="title.blog" />
+      <SEO
+        title={t("title.blog")}
+        description="Leia meus últimos artigos sobre diversos tópicos."
+        slug="/blog"
+      />
 
       <div className="px-2 max-w-4xl">
         <motion.div
